@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fundamentals Part 3 - The Odin Project</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+  <script>
+    // Write a function that adds 7 to whatever number the user inputs
+    function add7(){
+      const num = prompt("Enter a number and I will add 7 to it!");
+      const newNum = parseInt(num) + 7;
+      return (newNum);
+    }
+    alert(add7())
+
+    // Write a function called multiply that takes 2 numbers and returns their product.
+
+    function multiply(){
+      const num1 = prompt("Enter the first number to be multiplied");
+      const num2 = prompt("Enter the second number to be multiplied");
+      const num3 = parseInt(num1 * num2);
+      return (num3);
+    }
+    alert(multiply())
+
+    // Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. 
+    // Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+
+    function capitalize(){
+      const string = prompt("enter any string that doesn't contain numbers");
+      const newString = string.toLowerCase();
+      return newString.charAt(0).toUpperCase() + newString.slice(1);
+    }
+    alert(capitalize())
+
+    // return the last letter of a string
+    // lastLetter("abcd") should return "d"
+    
+    function lastLetter(){
+      var string = prompt("enter any string that doesn't contain numbers");
+      return string.slice(-1);
+    }
+    alert(lastLetter())
+  </script>
+</body>
+</html>
